@@ -1,53 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sphere Industries</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="brand">
-        <div class="mark">S</div>
-        <div>
-          <h1>Sphere Industries</h1>
-          <p>Construction. Real Estate. Technology.</p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sphere Industries</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">Sphere Industries</div>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#divisions">Divisions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="menu" id="menuBtn">☰</div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Building Real Estate, Technology & Infrastructure</h1>
+      <p>Sphere Industries delivers modern solutions across construction, software, energy, and connectivity.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      Sphere Industries is a diversified company focused on real estate development, construction,
+      and advanced technology solutions including AI, solar systems, CCTV, and cloud infrastructure.
+    </p>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section dark">
+    <h2>Technology Services</h2>
+
+    <div class="grid">
+      <div class="card">Software Development</div>
+      <div class="card">AI Solutions & Consulting</div>
+      <div class="card">Cloud Consulting</div>
+      <div class="card">Network & Internet Services</div>
+      <div class="card">CCTV Installation</div>
+      <div class="card">Solar Installation</div>
+    </div>
+  </section>
+
+  <!-- DIVISIONS -->
+  <section id="divisions" class="section">
+    <h2>Our Divisions</h2>
+
+    <div class="grid">
+      <div class="card big">
+        <h3>Real Estate</h3>
+        <p>Residential and commercial property development and investment.</p>
       </div>
-      <nav>
-        <a href="#construction">Construction</a>
-        <a href="#real-estate">Real Estate</a>
-        <a href="#technology">Technology</a>
-      </nav>
-    </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero-copy">
-          <p>Building resilient spaces. Empowering modern living. Enabling digital progress.</p>
-          <a class="cta" href="#services">Explore Services</a>
-        </div>
-      </section>
+      <div class="card big">
+        <h3>Technology</h3>
+        <p>Software, AI systems, cloud infrastructure, and smart security solutions.</p>
+      </div>
 
-      <section id="services" class="services-grid">
-        <article id="construction" class="service-card">
-          <h2>Construction</h2>
-          <p>From concept to completion, we deliver high-quality infrastructure and commercial builds with precision and care.</p>
-        </article>
-        <article id="real-estate" class="service-card">
-          <h2>Real Estate</h2>
-          <p>Strategic property development and management tailored to modern markets and long-term value creation.</p>
-        </article>
-        <article id="technology" class="service-card">
-          <h2>Technology</h2>
-          <p>Smart systems and digital solutions that connect people, projects, and processes for seamless growth.</p>
-        </article>
-      </section>
-    </main>
+      <div class="card big">
+        <h3>Construction</h3>
+        <p>Modern construction and infrastructure development projects.</p>
+      </div>
+    </div>
+  </section>
 
-    <footer class="site-footer">
-      <p>Sphere Industries &copy; 2026</p>
-    </footer>
-  </body>
+  <!-- CONTACT -->
+  <section id="contact" class="section dark">
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Service Interested In" />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="msg"></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Sphere Industries. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
